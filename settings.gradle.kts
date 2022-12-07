@@ -1,0 +1,1 @@
+rootProject.name = "com.plandell.ktor-movie-server"
