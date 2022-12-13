@@ -13,7 +13,6 @@ interface IMovieRepository {
 
     fun getAllMovies(session: String): ApiResponse
 
-    fun searchMovie(name: String): ApiResponse
-
     fun getMovieById(id: Int): ApiResponse
+    fun getMovieByName(name: String): ApiResponse
 }

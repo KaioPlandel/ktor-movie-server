@@ -62,21 +62,77 @@ class MovieImplem : IMovieRepository {
             categories = listOf("Action"),
             rating = 5.8,
         ),
+        Movie(
+            id = 13,
+            title = "The Last Man",
+            description = "The Last Man” is a thoroughly unpleasant experience from start to finish, and not even in an artful way. It is relentlessly bleak, smothered in more shades of gray than kinky Christian ever could have conjured and photographed with an oppressive sameness.",
+            image = "/images/violet.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 14,
+            title = "Avatar",
+            image = "/images/dora.png",
+            description = "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 15,
+            title = "Prey",
+            description = "Naru, a skilled warrior of the Comanche Nation, fights to protect her tribe against one of the first highly-evolved Predators to land on Earth.",
+            image = "/images/nope.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 16,
+            title = "Smile",
+            description = "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
+            image = "/images/drishyam.png",
+            categories = listOf("Action", "Horror"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 17,
+            title = "Memory",
+            description = "An assassin-for-hire finds that he's become a target after he refuses to complete a job for a dangerous criminal organization.",
+            image = "/images/home.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 18,
+            title = "The Northman",
+            description = "A young Viking prince is on a quest to avenge his father's murder.",
+            image = "/images/show.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        )
     )
 
     override val topSession: List<Movie> = listOf(
         Movie(
+            id = 12,
+            title = "The Northman",
+            description = "A young Viking prince is on a quest to avenge his father's murder.",
+            image = "/images/adam.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
             id = 7,
             title = "The Last Man",
             description = "The Last Man” is a thoroughly unpleasant experience from start to finish, and not even in an artful way. It is relentlessly bleak, smothered in more shades of gray than kinky Christian ever could have conjured and photographed with an oppressive sameness.",
-            image = "/images/thelastman.png",
+            image = "/images/blank.png",
             categories = listOf("Action"),
             rating = 5.8,
         ),
         Movie(
             id = 8,
             title = "Avatar",
-            image = "/images/avatar.png",
+            image = "/images/dual.png",
             description = "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
             categories = listOf("Action"),
             rating = 5.8,
@@ -85,7 +141,7 @@ class MovieImplem : IMovieRepository {
             id = 9,
             title = "Prey",
             description = "Naru, a skilled warrior of the Comanche Nation, fights to protect her tribe against one of the first highly-evolved Predators to land on Earth.",
-            image = "/images/prey.png",
+            image = "/images/batman.png",
             categories = listOf("Action"),
             rating = 5.8,
         ),
@@ -93,7 +149,7 @@ class MovieImplem : IMovieRepository {
             id = 10,
             title = "Smile",
             description = "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-            image = "/images/smile.png",
+            image = "/images/blacklight.png",
             categories = listOf("Action", "Horror"),
             rating = 5.8,
         ),
@@ -101,15 +157,7 @@ class MovieImplem : IMovieRepository {
             id = 11,
             title = "Memory",
             description = "An assassin-for-hire finds that he's become a target after he refuses to complete a job for a dangerous criminal organization.",
-            image = "/images/memory.png",
-            categories = listOf("Action"),
-            rating = 5.8,
-        ),
-        Movie(
-            id = 12,
-            title = "The Northman",
-            description = "A young Viking prince is on a quest to avenge his father's murder.",
-            image = "/images/thenortham.png",
+            image = "/images/incarnation.png",
             categories = listOf("Action"),
             rating = 5.8,
         )
@@ -120,14 +168,14 @@ class MovieImplem : IMovieRepository {
             id = 13,
             title = "The Last Man",
             description = "The Last Man” is a thoroughly unpleasant experience from start to finish, and not even in an artful way. It is relentlessly bleak, smothered in more shades of gray than kinky Christian ever could have conjured and photographed with an oppressive sameness.",
-            image = "/images/thelastman.png",
+            image = "/images/violet.png",
             categories = listOf("Action"),
             rating = 5.8,
         ),
         Movie(
             id = 14,
             title = "Avatar",
-            image = "/images/avatar.png",
+            image = "/images/dora.png",
             description = "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
             categories = listOf("Action"),
             rating = 5.8,
@@ -136,7 +184,7 @@ class MovieImplem : IMovieRepository {
             id = 15,
             title = "Prey",
             description = "Naru, a skilled warrior of the Comanche Nation, fights to protect her tribe against one of the first highly-evolved Predators to land on Earth.",
-            image = "/images/prey.png",
+            image = "/images/nope.png",
             categories = listOf("Action"),
             rating = 5.8,
         ),
@@ -144,7 +192,7 @@ class MovieImplem : IMovieRepository {
             id = 16,
             title = "Smile",
             description = "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-            image = "/images/smile.png",
+            image = "/images/drishyam.png",
             categories = listOf("Action", "Horror"),
             rating = 5.8,
         ),
@@ -152,7 +200,7 @@ class MovieImplem : IMovieRepository {
             id = 17,
             title = "Memory",
             description = "An assassin-for-hire finds that he's become a target after he refuses to complete a job for a dangerous criminal organization.",
-            image = "/images/memory.png",
+            image = "/images/home.png",
             categories = listOf("Action"),
             rating = 5.8,
         ),
@@ -160,10 +208,58 @@ class MovieImplem : IMovieRepository {
             id = 18,
             title = "The Northman",
             description = "A young Viking prince is on a quest to avenge his father's murder.",
+            image = "/images/show.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 1,
+            title = "The Last Man",
+            description = "The Last Man” is a thoroughly unpleasant experience from start to finish, and not even in an artful way. It is relentlessly bleak, smothered in more shades of gray than kinky Christian ever could have conjured and photographed with an oppressive sameness.",
+            image = "/images/thelastman.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 2,
+            title = "Avatar",
+            image = "/images/avatar.png",
+            description = "Jake Sully lives with his newfound family formed on the planet of Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their planet.",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 3,
+            title = "Prey",
+            description = "Naru, a skilled warrior of the Comanche Nation, fights to protect her tribe against one of the first highly-evolved Predators to land on Earth.",
+            image = "/images/prey.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 4,
+            title = "Smile",
+            description = "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
+            image = "/images/smile.png",
+            categories = listOf("Action", "Horror"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 5,
+            title = "Memory",
+            description = "An assassin-for-hire finds that he's become a target after he refuses to complete a job for a dangerous criminal organization.",
+            image = "/images/memory.png",
+            categories = listOf("Action"),
+            rating = 5.8,
+        ),
+        Movie(
+            id = 6,
+            title = "The Northman",
+            description = "A young Viking prince is on a quest to avenge his father's murder.",
             image = "/images/thenortham.png",
             categories = listOf("Action"),
             rating = 5.8,
-        )
+        ),
     )
 
     override fun getAllMovies(session: String): ApiResponse {
@@ -174,16 +270,60 @@ class MovieImplem : IMovieRepository {
         )
     }
 
-    override fun searchMovie(name: String): ApiResponse {
-        TODO("Not yet implemented")
+    override fun getMovieById(id: Int): ApiResponse {
+        return ApiResponse(
+            success = true,
+            message = "Ok",
+            movies = searchForId(id)
+        )
     }
 
-    override fun getMovieById(id: Int): ApiResponse {
-        TODO("Not yet implemented")
+    override fun getMovieByName(name: String): ApiResponse {
+        return ApiResponse(
+            message = "Ok",
+            success = true,
+            movies = searchForName(name = name)
+        )
     }
 
     fun getSessionMovies(session: String?): String {
         if (session == null) return "lasted"
         return session
+    }
+
+    fun searchForId(id: Int): List<Movie> {
+        val movies = getAllMovies()
+        val listMovies = mutableListOf<Movie>()
+        for (movie in movies) {
+            if (movie.id == id) {
+                listMovies.add(movie)
+            }
+        }
+        return listMovies
+    }
+
+    fun searchForName(name: String): List<Movie> {
+        val movies = getAllMovies()
+        val listMovies = mutableListOf<Movie>()
+        for (movie in movies) {
+            if (movie.title.lowercase().contains(name.lowercase())) {
+                listMovies.add(movie)
+            }
+        }
+        return listMovies
+    }
+
+    fun getAllMovies(): List<Movie> {
+        val listMovies = mutableListOf<Movie>()
+        for (movie in lastedSession) {
+            listMovies.add(movie)
+        }
+        for (movie in topSession) {
+            listMovies.add(movie)
+        }
+        for (movie in favoriteSession) {
+            listMovies.add(movie)
+        }
+        return listMovies
     }
 }
