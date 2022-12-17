@@ -7,19 +7,18 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
-fun Route.setupAllMovies(){
+fun Route.setupAllMovies() {
     val repository: IMovieRepository by inject()
-    get("/movies/v1"){
+    get("/movies") {
         try {
-            val session = call.request.queryParameters["session"] ?: "lasted"
-            val response = repository.getAllMovies(session)
+            val response = repository.getAllMovies()
             call.respond(
                 message = response,
                 status = HttpStatusCode.OK
             )
-        }catch (e : Exception){
+        } catch (e: Exception) {
             call.respond(
-                message = "Movies not found",
+                message = "Movies not found" + e.message.toString(),
                 status = HttpStatusCode.NotFound
             )
         }

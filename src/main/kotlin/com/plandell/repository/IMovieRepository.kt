@@ -7,11 +7,12 @@ interface IMovieRepository {
 
     val movies: Map<String,List<Movie>>
 
-    val lastedSession: List<Movie>
+  //  val lastedSession: List<Movie>
     val topSession: List<Movie>
     val favoriteSession: List<Movie>
+    val allMovies: List<Movie>
 
-    fun getAllMovies(session: String): ApiResponse
+    fun getAllMovies(): ApiResponse
 
     fun getMovieById(id: Int): ApiResponse
     fun getMovieByName(name: String): ApiResponse
